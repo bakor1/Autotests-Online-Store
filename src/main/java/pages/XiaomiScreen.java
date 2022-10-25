@@ -24,6 +24,13 @@ public class XiaomiScreen extends BaseScreen {
     @FindBy(xpath = "//android.widget.FrameLayout[2]//android.widget.FrameLayout[2]//android.widget.FrameLayout[2]//android.view.ViewGroup[1]/android.widget.FrameLayout")
     private WebElement firstElement;
 
+    @FindBy(xpath = "//android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]//android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]")
+    private WebElement allInThisCategoryButton;
+
+    public void tapOnAllCategory() {
+        allInThisCategoryButton.click();
+    }
+
     public void tapOnShowButton() {
         showButton.click();
     }

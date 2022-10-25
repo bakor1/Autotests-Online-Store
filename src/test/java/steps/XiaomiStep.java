@@ -23,6 +23,10 @@ public class XiaomiStep {
     public void tapOnSortButton() {
         xiaomiScreen.tapOnSortButton();
     }
+    @Step("Tap on all category button")
+    public void tapOnAllCategory() {
+        xiaomiScreen.tapOnAllCategory();
+    }
 
     @Step("Tap on ascending button")
     public void tapOnAscButton() {

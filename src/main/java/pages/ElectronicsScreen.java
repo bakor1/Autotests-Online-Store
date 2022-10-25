@@ -12,7 +12,7 @@ public class ElectronicsScreen extends BaseScreen {
     @FindBy(id = "main")
     private WebElement electronicsScreenBaseElement;
 
-    @FindBy(xpath = ("//android.view.ViewGroup[4]"))
+    @FindBy(xpath = ("//android.view.ViewGroup[5]"))
     private WebElement xiaomiButton;
 
     public void tapOnXiaomiButton() {

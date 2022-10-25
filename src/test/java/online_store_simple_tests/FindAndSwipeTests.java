@@ -19,7 +19,7 @@ public class FindAndSwipeTests extends BaseTest {
         previewStep.onPreviewScreen();
     }
 
-    @Test(description = "Find a xiaomi product with a minimum price")
+    @Test(description = "Find first xiaomi product after sorting in ascending price")
     public void sortingInSearchResults() {
         previewStep.onPreviewScreen();
         swipeScreen(UP, 500);
@@ -34,6 +34,8 @@ public class FindAndSwipeTests extends BaseTest {
         electronicsStep.onElectronicsScreen();
         electronicsStep.tapOnXiaomi();
         xiaomiStep.onXiaomiScreen();
+        xiaomiStep.waitXiaomiPage();
+        xiaomiStep.tapOnAllCategory();
         xiaomiStep.waitXiaomiPage();
         xiaomiStep.tapOnSortButton();
         xiaomiStep.waitPopUp();
